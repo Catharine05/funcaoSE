@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Idade e Ano</h1>
+    <h2>Dados da primeira pessoa</h2>
+    <p>Nome:<span id="nome01"></span></p>
+    <p>Idade:<span id="idade01"></span></p>
+    <p>AnoNascimento:<span id="ano01"></span></p>
+
+    <h2>Dados da segunda pessoa</h2>
+    <p>Nome:<span id="nome02"></span></p>
+    <p>Idade:<span id="idade02"></span></p>
+    <p>AnoNascimento:<span id="ano02"></span></p>
+    <p>A pessoa mais nova é:<span id="pessoa_nova"></span></p>
+
+    <script>
+
+ let ano = prompt("Digite o ano atual");
+ 
+ 
+ let nome01 = prompt("Digite o primeiro nome");
+ let ano01 = Number(prompt("Digite a primeira data de nascimento"));
+ 
+ let nome02 = prompt("Digite o segundo nome");
+ let ano02 = Number(prompt("Digite a segunda data de nascimento"));
+
+ let idade01 = (ano -ano01)
+ let idade02 = (ano - ano02)
+
+ if (idade01 < idade02) { 
+    pessoa_nova = nome01
+ }
+
+else {pessoa_nova = nome02}
+
+document.getElementById("nome01").innerHTML = nome01;
+document.getElementById("idade01").innerHTML = idade01;
+document.getElementById("ano01").innerHTML = ano01;
+document.getElementById("nome02").innerHTML = nome02;
+document.getElementById("idade02").innerHTML = idade02;
+document.getElementById("ano02").innerHTML = ano02;
+document.getElementById("pessoa_nova").innerHTML = pessoa_nova;
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balança</title>
+</head>
+<body>
+    <h1>Balança</h1>
+    <P>Peso da pessoa mais gorda</P>
+
+        NomePessoa:<div id="nome_pessoa" > </div> 
+        Peso:<div id="peso_01" > </div>
+        resultado: <span id="result"> </span>
+         
+        <script>
+        
+        let nome01 = prompt("Escreva o primeiro nome");
+        let nome02 = prompt("Escreva o segundo nome");
+        let result = "Voce esta Obeso"
+
+        let peso_01 = Number(prompt("Digite o seu peso"));
+        let peso_02 = Number(prompt("Digite o seu peso"));
+
+        if (peso_01 < peso_02){
+            Peso=peso_02
+        }
+
+        else {Peso=peso_01}
+
+        if (peso_01 < peso_02){
+            nome_pessoa=nome_02
+        }
+
+        else {nome_pessoa=nome_01}
+
+         document.getElementById("peso_01").innerHTML=Peso;
+         document.getElementById("nome_pessoa").innerHTML=nome_pessoa;
+         document.getElementById("result").innerHTML=result;
+
+
+        </script>
+
+    
+            
+    
+
+
+
+
+
+        let peso1 Number(prompt("Digite o primeiro peso"));
+        let peso2 Number(prompt("Digite o segundo peso"));
+        let msg;
+
+
+    
+</body>
+</html>
